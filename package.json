@@ -1,6 +1,6 @@
 {
     "nativescript": {
-        "id": "svelte-native-template.halfnelson.github.io",
+        "id": "io.github.halfnelson.sveltenativetemplate",
         "tns-android": {
             "version": "5.2.0"
         },
