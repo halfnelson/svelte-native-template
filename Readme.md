@@ -1,4 +1,4 @@
-This is barebones svelte native project template created directly from a nativescript core project template
+This is a barebones svelte-native project template. It was created directly from a nativescript core project template. It provides an easy way to get started with a svelte native project.
 
 # Usage
 
@@ -8,6 +8,7 @@ You can get started with this using `degit`
 $ degit halfnelson/svelte-native-template myapp
 ```
 
+your svelte-native app will be found in the `myapp` folder
 
 # Recreating From Scratch
 
