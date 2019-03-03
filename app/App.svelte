@@ -1,4 +1,4 @@
-<page xmlns="tns" class="page">
+<page class="page">
     <actionBar title="My App" icon="" class="action-bar">
     </actionBar>
     <stackLayout class="p-20">

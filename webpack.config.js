@@ -8,6 +8,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const { NativeScriptWorkerPlugin } = require("nativescript-worker-loader/NativeScriptWorkerPlugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const svelteNativePreprocessor = require("svelte-native-preprocessor");
 
 module.exports = env => {
     // Add your custom Activities, Services and other Android app components here.
@@ -198,8 +199,15 @@ module.exports = env => {
                 {
                     test: /\.svelte$/,
                     exclude: /node_modules/,
-                    use: 'svelte-loader'
-                },
+                    use: [
+                        { 
+                            loader: 'svelte-loader',
+                            options: {
+                                preprocess: svelteNativePreprocessor()
+                            }
+                        }
+                    ]
+                }
             ]
         },
         plugins: [
