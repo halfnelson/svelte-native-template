@@ -185,7 +185,10 @@ module.exports = env => {
                         "sass-loader"
                     ]
                 },
-
+                {
+                    test: /\.mjs$/,
+                    type: 'javascript/auto',
+                },
                 {
                     test: /\.ts$/,
                     use: {
