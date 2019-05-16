@@ -23,19 +23,32 @@ Create ns core app
 Install svelte, svelte-native, svelte-loader
 
 ```bash
-    $ npm install svelte@beta
+    $ npm install --save-dev svelte
     $ npm install svelte-native
-    $ npm install svelte-loader
+    $ npm install --save-dev "halfnelson/svelte-loader#fix-virtual-purge"
+    $ npm install --save-dev svelte-native-preprocessor
+```
+import SvelteNativePreprocessor in webpack.config.js
+
+```js
+const svelteNativePreprocessor = require("svelte-native-preprocessor");
 ```
 
-Append svelte-loader to end module rules
+Append svelte-loader to end module rules after ts
 
-```
-{
-    test: /\.svelte$/,
-    exclude: /node_modules/,
-    use: 'svelte-loader'
-}
+```js
+  {
+        test: /\.svelte$/,
+        exclude: /node_modules/,
+        use: [
+            { 
+                loader: 'svelte-loader',
+                options: {
+                    preprocess: svelteNativePreprocessor()
+                }
+            }
+        ]
+    }
 ```   
 
 Remove nativescript files from `app` except for  `package.json` and `app.ts` and `app.css`
@@ -85,7 +98,7 @@ add `App.svelte`:
 Run the app with an ensure it worked
 
 ```bash
-tns run android --bundle
+tns run android
 ```
 
 
