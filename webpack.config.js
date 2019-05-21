@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const { join, relative, resolve, sep } = require("path");
 
 const webpack = require("webpack");
