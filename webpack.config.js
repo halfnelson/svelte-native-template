@@ -209,6 +209,10 @@ module.exports = env => {
                 },
 
                 {
+                    test: /\.mjs$/,
+                    type: 'javascript/auto',
+                },
+                {
                     test: /\.ts$/,
                     use: {
                         loader: "ts-loader",
