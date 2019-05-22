@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const { join, relative, resolve, sep } = require("path");
 
 const webpack = require("webpack");
@@ -88,7 +90,7 @@ module.exports = env => {
             hashSalt
         },
         resolve: {
-            extensions: [".ts", ".js", ".scss", ".css"],
+            extensions: [".ts", ".js", ".svelte", ".scss", ".css"],
             // Resolve {N} system modules from tns-core-modules
             modules: [
                 resolve(__dirname, "node_modules/tns-core-modules"),
@@ -207,6 +209,10 @@ module.exports = env => {
                 },
 
                 {
+                    test: /\.mjs$/,
+                    type: 'javascript/auto',
+                },
+                {
                     test: /\.ts$/,
                     use: {
                         loader: "ts-loader",
@@ -224,7 +230,7 @@ module.exports = env => {
                     test: /\.svelte$/,
                     exclude: /node_modules/,
                     use: [
-                        { 
+                        {
                             loader: 'svelte-loader',
                             options: {
                                 preprocess: svelteNativePreprocessor()
