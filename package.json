@@ -14,12 +14,12 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "nativescript-theme-core": "~1.0.4",
-    "svelte-native": "^0.4.0",
+    "svelte-native": "^0.4.1",
     "tns-core-modules": "6.0.1"
   },
   "devDependencies": {
     "nativescript-dev-webpack": "1.0.1",
-    "svelte": "^3.6.9",
+    "svelte": "3.6.1",
     "svelte-loader": "github:halfnelson/svelte-loader#fix-virtual-purge",
     "svelte-native-preprocessor": "^0.1.4",
     "typescript": "3.4.5"
