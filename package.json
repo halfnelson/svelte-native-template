@@ -1,11 +1,11 @@
 {
   "nativescript": {
     "id": "technology.sveltenative.template",
-    "tns-android": {
-      "version": "6.0.2"
-    },
     "tns-ios": {
-      "version": "6.0.2"
+      "version": "6.1.1"
+    },
+    "tns-android": {
+      "version": "6.1.1"
     }
   },
   "main": "app.js",
@@ -13,14 +13,14 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
-    "nativescript-theme-core": "~2.0.17",
+    "nativescript-theme-core": "~2.0.21",
     "svelte-native": "file://../svelte-native/dist",
-    "tns-core-modules": "6.1.0"
+    "tns-core-modules": "6.1.1"
   },
   "devDependencies": {
     "nativescript-dev-webpack": "1.2.0",
-    "svelte": "^3.9.2",
-    "svelte-loader": "github:rixo/svelte-loader#hmr",
+    "svelte": "^3.12.1",
+    "svelte-loader": "github:rixo/svelte-loader",
     "svelte-native-preprocessor": "^0.1.4",
     "typescript": "3.6.2"
   },
