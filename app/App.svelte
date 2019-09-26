@@ -1,9 +1,9 @@
-<page class="page">
-    <actionBar title="My App" icon="" class="action-bar">
+<page>
+    <actionBar title="My App" icon="">
     </actionBar>
     <stackLayout class="p-20">
         <label text="Tap the button" class="h1 text-center"/>
-        <button text="TAP" on:tap="{ onTap }" class="btn btn-primary btn-active"/>
+        <button text="TAP" on:tap="{ onTap }" class="-primary -active"/>
         <label text="{ message }" class="h2 text-center" textWrap="true"/>
     </stackLayout>
 </page>
