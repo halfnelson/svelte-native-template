@@ -20,7 +20,7 @@
   "devDependencies": {
     "nativescript-dev-webpack": "1.2.0",
     "svelte": "^3.12.1",
-    "svelte-loader": "github:rixo/svelte-loader",
+    "svelte-loader": "github:rixo/svelte-loader#8d5701a4b0d0eda5ebc0a63736a335acad79018d",
     "svelte-native-preprocessor": "^0.1.4",
     "typescript": "3.6.2"
   },
