@@ -6,9 +6,12 @@
         "emitDecoratorMetadata": true,
         "noEmitHelpers": true,
         "noEmitOnError": true,
+        "skipLibCheck": true,
         "lib": [
-            "es6",
-            "dom"
+            "es6"
+        ],
+        "types": [
+            "./node_modules/svelte/"
         ],
         "baseUrl": ".",
         "paths": {

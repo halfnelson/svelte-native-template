@@ -96,7 +96,7 @@ module.exports = env => {
             hashSalt
         },
         resolve: {
-            extensions: [".ts", ".js", ".svelte", ".mjs", ".scss", ".css"],
+            extensions: [".ts", ".mjs", ".js", ".svelte", ".scss", ".css"],
             // Resolve {N} system modules from tns-core-modules
             modules: [
                 resolve(__dirname, "node_modules/tns-core-modules"),
