@@ -5,7 +5,7 @@
       "version": "6.1.1"
     },
     "tns-android": {
-      "version": "6.1.1"
+      "version": "6.1.2"
     }
   },
   "main": "app.js",
@@ -13,14 +13,14 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
-    "nativescript-theme-core": "~2.0.21",
-    "svelte-native": "~0.5.1",
-    "tns-core-modules": "~6.1.1"
+    "nativescript-theme-core": "~2.0.24",
+    "svelte-native": "~0.6.0",
+    "tns-core-modules": "~6.1.2"
   },
   "devDependencies": {
     "nativescript-dev-webpack": "1.2.0",
     "svelte": "^3.12.1",
-    "svelte-loader": "github:rixo/svelte-loader#8d5701a4b0d0eda5ebc0a63736a335acad79018d",
+    "svelte-loader": "github:rixo/svelte-loader#2204a8f7e66e441f5e0ce6e70a5fa0f9e6bb2103",
     "svelte-native-preprocessor": "^0.1.4",
     "typescript": "3.6.2"
   },
