@@ -54,7 +54,7 @@ module.exports = env => {
 
     const useLibs = compileSnapshot;
     const isAnySourceMapEnabled = !!sourceMap || !!hiddenSourceMap;
-    const externals = nsWebpack.getConvertedExternals(env.externals);
+    const externals = nsWebpack.getConvertedExternals(env.externals.filter(x => x != "svelte" && x != "svelte-native" ));
 
     const appFullPath = resolve(projectRoot, appPath);
     const appResourcesFullPath = resolve(projectRoot, appResourcesPath);
