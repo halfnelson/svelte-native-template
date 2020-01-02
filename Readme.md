@@ -25,7 +25,7 @@ Install svelte, svelte-native, svelte-loader
 ```bash
     $ npm install --save-dev svelte
     $ npm install svelte-native
-    $ npm install --save-dev "halfnelson/svelte-loader#fix-virtual-purge"
+    $ npm install --save-dev svelte-loader-hot
     $ npm install --save-dev svelte-native-preprocessor
 ```
 import SvelteNativePreprocessor in webpack.config.js
@@ -42,7 +42,7 @@ Append svelte-loader to end module rules after ts
         exclude: /node_modules/,
         use: [
             { 
-                loader: 'svelte-loader',
+                loader: 'svelte-loader-hot',
                 options: {
                     preprocess: svelteNativePreprocessor()
                 }
