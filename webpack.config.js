@@ -240,7 +240,7 @@ module.exports = env => {
                     exclude: /node_modules/,
                     use: [
                         {
-                            loader: 'svelte-loader',
+                            loader: 'svelte-loader-hot',
                             options: {
                                 preprocess: svelteNativePreprocessor(),
                                 hotReload: true,
