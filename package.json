@@ -14,13 +14,13 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "nativescript-theme-core": "~2.0.24",
-    "svelte-native": "~0.7.2",
+    "svelte-native": "~0.7.3",
     "tns-core-modules": "~6.2.3"
   },
   "devDependencies": {
     "nativescript-dev-webpack": "1.3.0",
     "svelte": "~3.16.4",
-    "svelte-loader": "github:halfnelson/svelte-loader#native",
+    "svelte-loader-hot": "0.1.1",
     "svelte-native-preprocessor": "^0.1.4",
     "typescript": "3.6.2"
   },
