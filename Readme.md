@@ -2,13 +2,25 @@ This is a barebones svelte-native project template. It was created directly from
 
 # Usage
 
-You can get started with this using `degit`
+You can get started with this using `degit`:
 
 ```bash
-$ degit halfnelson/svelte-native-template myapp
+degit halfnelson/svelte-native-template myapp
+cd myapp
+npm install
 ```
 
-your svelte-native app will be found in the `myapp` folder
+Your svelte-native app will be found in the `myapp` folder.
+
+Once installed use the `tns preview`, `tns build` or `tns run` commands as for a normal NativeScript application.
+
+Example: install & run application on your device:
+
+```bash
+tns run android
+# or
+tns run ios
+```
 
 # Recreating From Scratch
 
@@ -41,7 +53,7 @@ Append svelte-loader to end module rules after ts
         test: /\.svelte$/,
         exclude: /node_modules/,
         use: [
-            { 
+            {
                 loader: 'svelte-loader',
                 options: {
                     preprocess: svelteNativePreprocessor()
@@ -87,10 +99,10 @@ add `App.svelte`:
 <script>
     let counter = 42;
     let message;
-    $: message = (counter <= 0) 
+    $: message = (counter <= 0)
                     ? "Hoorraaay! You unlocked the Svelte-Native clicker achievement!"
                     : `${counter} taps left`
-    
+
     const onTap = () => counter--;
 </script>
 ```
@@ -100,8 +112,3 @@ Run the app with an ensure it worked
 ```bash
 tns run android
 ```
-
-
-
-
-
