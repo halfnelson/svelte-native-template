@@ -10,6 +10,9 @@
     "templateVersion": "v2"
   },
   "name": "tns-template-blank-svelte",
+  "displayName": "Blank Svelte",
+  "templateType": "App template",
+  "author": "David Pershouse (https://github.com/halfnelson)",
   "version": "6.4.0",
   "main": "app.js",
   "description": "Blank template for Nativescript application using Svelte",
