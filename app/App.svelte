@@ -1,19 +1,24 @@
 <page>
-    <actionBar title="My App" icon="">
-    </actionBar>
-    <stackLayout class="p-20">
-        <label text="Tap the button" class="h1 text-center"/>
-        <button text="TAP" on:tap="{ onTap }" class="-primary -active"/>
-        <label text="{ message }" class="h2 text-center" textWrap="true"/>
-    </stackLayout>
+    <actionBar title="Svelte Native App" />
+    <gridLayout>
+        <label class="info" horizontalAlignment="center" verticalAlignment="center" textWrap="true">
+            <formattedString>
+                <span class="fas" text="&#xf135;" />
+                <span text=" {message}" />
+            </formattedString>
+        </label>
+    </gridLayout>
 </page>
 
 <script>
-    let counter = 42;
-    let message;
-    $: message = (counter <= 0) 
-                    ? "Hoorraaay! You unlocked the Svelte-Native clicker achievement!"
-                    : `${counter} taps left`
-    
-    const onTap = () => counter--;
+    let message = "Blank Svelte Native App"
 </script>
+
+<style>
+    .info .fas {
+        color: #3A53FF;
+    }
+    .info {
+        font-size: 20;
+    }
+</style>
