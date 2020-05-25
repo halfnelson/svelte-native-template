@@ -11,6 +11,7 @@ module.exports = env => {
             {
                 loader: 'svelte-loader-hot',
                 options: {
+                    dev: true,
                     preprocess: svelteNativePreprocessor(),
                     hotReload: true,
                     hotOptions: {
