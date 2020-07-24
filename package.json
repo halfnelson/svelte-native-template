@@ -19,15 +19,15 @@
   "license": "Apache-2.0",
   "repository": "https://github.com/halfnelson/svelte-native-template",
   "dependencies": {
-    "nativescript-theme-core": "~2.0.24",
-    "svelte-native": "~0.8.0",
-    "tns-core-modules": "~6.4.2"
+    "@nativescript/core": "~6.5.1",
+    "@nativescript/theme": "~2.3.3",
+    "svelte-native": "~0.8.0"
   },
   "devDependencies": {
     "nativescript-dev-webpack": "~1.5.1",
-    "svelte": "~3.19.1",
-    "svelte-loader-hot": "0.1.1",
-    "svelte-native-preprocessor": "^0.1.7",
+    "svelte": "~3.22.3",
+    "svelte-loader-hot": "~0.3.0",
+    "svelte-native-preprocessor": "~0.1.8",
     "typescript": "~3.7.5"
   },
   "gitHead": "c06800e52ee1a184ea2dffd12a6702aaa43be4e3",
