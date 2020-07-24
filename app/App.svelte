@@ -10,8 +10,8 @@
     </gridLayout>
 </page>
 
-<script>
-    let message = "Blank Svelte Native App"
+<script lang="typescript">
+    let message: string = "Blank Svelte Native App"
 </script>
 
 <style>
