@@ -1,4 +1,4 @@
-This is a barebones svelte-native project template. It was created directly from a nativescript core project template. It provides an easy way to get started with a svelte native project.
+This is a blank svelte-native project template. It has preprocessing with typescript support enabled. It provides an easy way to get started with a svelte native project.
 
 # Usage
 
@@ -12,12 +12,12 @@ npm install
 
 Your svelte-native app will be found in the `myapp` folder.
 
-Once installed use the `tns preview`, `tns build` or `tns run` commands as for a normal NativeScript application.
+Once installed use the `ns preview`, `ns build` or `ns run` commands as for a normal NativeScript application.
 
 Example: install & run application on your device:
 
 ```bash
-tns run android
+ns run android
 # or
-tns run ios
+ns run ios
 ```

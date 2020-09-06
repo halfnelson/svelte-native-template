@@ -1,4 +1,5 @@
 const webpackConfig = require("./webpack.config");
+const preprocessConfig =  require("./svelte.config.js");
 const svelteNativePreprocessor = require("svelte-native-preprocessor");
 
 module.exports = env => {
@@ -11,9 +12,11 @@ module.exports = env => {
             {
                 loader: 'svelte-loader-hot',
                 options: {
-                    preprocess: svelteNativePreprocessor(),
-                    hotReload: true,
+                    dev: env.production ? false : true,
+                    preprocess: [preprocessConfig.preprocess, svelteNativePreprocessor()],
+                    hotReload: env.production ? false : true,
                     hotOptions: {
+                        injectCss: false,
                         native: true
                     }
                 }

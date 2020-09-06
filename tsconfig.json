@@ -1,17 +1,20 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
+        "module": "ESNext",
+        "target": "ES2017",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": false,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noEmitHelpers": true,
         "noEmitOnError": true,
         "skipLibCheck": true,
         "lib": [
-            "es6"
+            "ES2017"
         ],
         "types": [
-            "./node_modules/svelte/"
+            "svelte"
         ],
         "baseUrl": ".",
         "paths": {
@@ -20,6 +23,9 @@
             ]
         }
     },
+    "include": [
+        "app/**/*"
+    ],
     "exclude": [
         "node_modules",
         "platforms"
