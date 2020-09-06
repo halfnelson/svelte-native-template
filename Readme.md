@@ -1,4 +1,4 @@
-This is a barebones svelte-native project template. It has preprocessing with typescript support enabled. It provides an easy way to get started with a svelte native project.
+This is a blank svelte-native project template. It has preprocessing with typescript support enabled. It provides an easy way to get started with a svelte native project.
 
 # Usage
 
