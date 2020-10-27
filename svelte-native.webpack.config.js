@@ -18,6 +18,11 @@ module.exports = env => {
                     hotOptions: {
                         injectCss: false,
                         native: true
+                    },
+                    onwarn: (warning, onwarn) => {
+                        if (!/A11y:/.test(warning.message)) {
+                            onwarn(warning);
+                        }
                     }
                 }
             }
