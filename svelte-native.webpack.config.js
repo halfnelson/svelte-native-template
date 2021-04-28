@@ -4,6 +4,8 @@ const svelteNativePreprocessor = require("svelte-native-preprocessor");
 
 module.exports = env => {
     const config = webpackConfig(env);
+    //stop ns preview from using its own bundled svelte and svelte-native (it is out of date)
+    config.externals = (config.externals || []).filter(x => !x.source.startsWith('^svelte'));
     config.resolve.extensions = [".ts", ".mjs", ".js", ".svelte", ".scss", ".css"];
     config.module.rules.push({
         test: /\.svelte$/,
