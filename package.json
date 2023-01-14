@@ -12,7 +12,7 @@
     "@nativescript/core": "~7.0.0",
     "@nativescript/theme": "~2.3.3",
     "svelte-native": "~0.9.1",
-    "@nativescript/webpack": "3.0.0"
+    "@nativescript/webpack": "5.0.12"
   },
   "devDependencies": {
     "@nativescript/android": "7.0.0",
